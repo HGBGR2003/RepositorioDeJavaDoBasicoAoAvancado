@@ -1,7 +1,5 @@
 package aluno.henrique.maquinalocal.aula11;
 
-import javax.swing.*;
-
 public class VariaveisInteiras {
     public static void main(String[] args) {
       byte idade01 = 20;
