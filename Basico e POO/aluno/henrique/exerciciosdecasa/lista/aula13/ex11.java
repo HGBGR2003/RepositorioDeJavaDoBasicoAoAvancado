@@ -1,6 +1,7 @@
 package aluno.henrique.exerciciosdecasa.lista.aula13;
 
-import java.text.DecimalFormat;
+import java.math.BigDecimal;
+import java.math.RoundingMode;
 import java.util.Scanner;
 
 public class ex11 {
@@ -19,23 +20,30 @@ public class ex11 {
         System.out.println("Informe um número real com virgula.");
         numeroReal = scn.nextDouble();
 
+        System.out.println("---------------------------------");
+
         //Letra A
-        /*
+
         double multiplicidade;
         multiplicidade = (numero1 * 2) * ((double) numero2 / 2);
-        System.out.println("O resultado é " +  multiplicidade);*/
+        System.out.println("O resultado é " +  multiplicidade);
+
+        System.out.println("---------------------------------");
 
         //Letra B
-        /*
         double triploSoma;
         triploSoma = (numero1 * 3) + ((double) numeroReal);
-        System.out.println("O resultado é " + triploSoma);*/
+        System.out.println("O resultado é " + triploSoma);
+
+        System.out.println("---------------------------------");
 
         //Letra C
-        double elevadoCubo = Math.pow(numeroReal,3);
-        DecimalFormat df = new DecimalFormat("#.##");
-        double novoValor = Double.parseDouble(df.format(elevadoCubo));
+        double elevadoCubo = Math.pow(numeroReal, 3);
+        BigDecimal valorDecimal = new BigDecimal(elevadoCubo);
+        valorDecimal = valorDecimal.setScale(2, RoundingMode.HALF_UP);
+        double novoValor = valorDecimal.doubleValue();
         System.out.println("O cubo desse resultado é " + novoValor);
+
 
     }
 }
