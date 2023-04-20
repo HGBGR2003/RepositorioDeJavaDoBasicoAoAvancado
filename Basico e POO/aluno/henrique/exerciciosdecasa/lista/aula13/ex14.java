@@ -2,7 +2,7 @@ package aluno.henrique.exerciciosdecasa.lista.aula13;
 
 import java.util.Scanner;
 
-public class exe14 {
+public class ex14 {
     public static void main(String[] args) {
         final double valorDosPeixes = 50.0;
         final double valorDaMulta = 4.0;
