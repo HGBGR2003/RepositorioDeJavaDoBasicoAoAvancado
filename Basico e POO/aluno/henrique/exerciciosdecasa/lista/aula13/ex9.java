@@ -6,8 +6,8 @@ public class ex9 {
         double temperaturaFare;
         double conversao;
 
-        temperaturaFare = Double.parseDouble(JOptionPane.showInputDialog("Digite uma temperatura em Fahrenheit?"));
+        temperaturaFare = Double.parseDouble(JOptionPane.showInputDialog("Digite uma temperatura em Fahrenheit ?"));
         conversao = 5 * (temperaturaFare - 32) / 9;
-        System.out.println("A temperatura em Celsius é : " + conversao);
+        System.out.println("A temperatura  " + temperaturaFare + " F é igual a " + conversao + " C");
     }
 }

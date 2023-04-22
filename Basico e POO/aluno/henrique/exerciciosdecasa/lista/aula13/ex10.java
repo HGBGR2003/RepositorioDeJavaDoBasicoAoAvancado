@@ -7,9 +7,9 @@ public class ex10 {
         double temperaturaCelsius;
 
         temperaturaCelsius = Double.parseDouble(JOptionPane.showInputDialog("Digite uma temperatura em Celisus"));
-        double conversaoFarenheit = (temperaturaCelsius * 9/5) + 32;
+        double conversaoFarenheit = (temperaturaCelsius * 1.8) + 32;
 
-        System.out.println("A temperatura de Celsius para Farenheit é " + conversaoFarenheit);
+        System.out.println("A temperatura  " + temperaturaCelsius + " C é igual a " + conversaoFarenheit + " F");
 
     }
 }
