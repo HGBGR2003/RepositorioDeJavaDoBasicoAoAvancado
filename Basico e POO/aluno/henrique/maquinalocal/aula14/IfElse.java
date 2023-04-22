@@ -6,12 +6,11 @@ public class IfElse {
     public static void main(String[] args) {
         Scanner impressora = new Scanner(System.in);
 
-        /*
-        System.out.println("Entre com sua idade :");
-        int idade = impressora.nextInt();*/
+        //System.out.println("Entre com sua idade :");
+        //int idade = impressora.nextInt();
 
-        /*
-        if (idade >= 18){
+
+        /*if (idade >= 18){
             System.out.println("É maior de Idade.");
         }else{
             System.out.println("Não é maior de Idade");
