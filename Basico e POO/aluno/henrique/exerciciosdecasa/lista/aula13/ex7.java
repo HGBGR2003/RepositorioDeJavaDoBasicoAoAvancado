@@ -7,7 +7,7 @@ public class ex7 {
         Scanner imprimir = new Scanner(System.in);
         double valorDOLado;
 
-        System.out.println("Informe um dos lados do triangulo ?");
+        System.out.println("Informe o tamanho do lado do quadrado ?");
         valorDOLado = imprimir.nextDouble();
 
         System.out.println("---------------------------");
