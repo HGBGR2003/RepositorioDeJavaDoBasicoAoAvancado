@@ -42,8 +42,12 @@ public class ex15 {
 
         System.out.println("-------------------------------------------");
 
+        double totalDescontos = descontoInss + descontoSindicato + descontoRenda;
+
         double resultadoSobra = resultado - descontoRenda - descontoInss - descontoSindicato;
 
+        System.out.println("Total de descontos " + totalDescontos);
+        System.out.println("-------------------------------------");
         System.out.println("O Sálario Liquido " + resultadoSobra);
 
     }
