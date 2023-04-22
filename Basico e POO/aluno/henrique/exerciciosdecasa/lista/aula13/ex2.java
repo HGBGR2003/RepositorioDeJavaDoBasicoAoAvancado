@@ -1,5 +1,6 @@
 package aluno.henrique.exerciciosdecasa.lista.aula13;
 
+
 import java.util.Scanner;
 
 public class ex2 {
