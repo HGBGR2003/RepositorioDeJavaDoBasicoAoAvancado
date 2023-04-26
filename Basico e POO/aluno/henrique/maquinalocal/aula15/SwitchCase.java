@@ -27,7 +27,7 @@ public class SwitchCase {
             System.out.println("Não é um dia da semana válido.");
         }
         */
-
+        /*
         switch (diaSemana){
             case 1:
                 System.out.println("Domingo");
@@ -50,6 +50,30 @@ public class SwitchCase {
             case 7:
                 System.out.println("Sábado");
                 break;
+            default:
+                System.out.println("Data inválida");
+        }
+        */
+
+        switch (diaSemana){
+            case 2:
+
+            case 3:
+
+            case 4:
+
+            case 5:
+
+            case 6:
+                System.out.println("Dia Util");
+                break;
+
+            case 1:
+
+            case 7:
+                System.out.println("Fim de semana");
+                break;
+
             default:
                 System.out.println("Data inválida");
         }
