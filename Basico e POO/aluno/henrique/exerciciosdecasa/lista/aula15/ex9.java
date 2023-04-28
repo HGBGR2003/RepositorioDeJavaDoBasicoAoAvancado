@@ -1,17 +1,21 @@
 package aluno.henrique.exerciciosdecasa.lista.aula15;
 
 import javax.swing.*;
+import java.util.Random;
+import java.util.Scanner;
 
 public class ex9 {
     public static void main(String[] args) {
-        String turnoClasse;
-        turnoClasse = JOptionPane.showInputDialog("Entre com seu turno caro aluno:(M/V Ou N)");
-        //Outro Jeito
-        switch (turnoClasse) {
-            case "m" -> System.out.println("Bom dia");
-            case "v" -> System.out.println("Boa tarde");
-            case "n" -> System.out.println("Boa noite");
-            default -> System.out.println("Valor Inválido");
+        double[] numero1 = new double[4];
+        Random random = new Random();
+        double numeroAleatorio = random.nextInt(11);
+
+        for (int i = 0; i < numero1.length; i++){
+            numeroAleatorio--;
+            numero1[i] = numeroAleatorio;
+            System.out.println(numero1[i]);
         }
+
+
     }
 }
