@@ -8,7 +8,7 @@ public class ex16 {
         d. Se o delta for positivo, a equação possui duas raiz reais;
         informe-as ao usuário;
          */
-        
+
         double a;
         double b;
         double c;
@@ -39,9 +39,12 @@ public class ex16 {
 
         if (delta == 0){
             System.out.println("Possui apenas uma raiz real:");
-            System.out.println("x1 = " + xResposta1 + ", x2 = " + xResposta2);
+            System.out.println("x1 = " + xResposta1);
         }
 
+        if (delta > 0){
+            System.out.println("x1 = " + xResposta1 + ", x2 = " + xResposta2);
+        }
 
 
     }
