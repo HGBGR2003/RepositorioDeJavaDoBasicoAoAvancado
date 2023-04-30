@@ -4,24 +4,31 @@ import javax.swing.*;
 
 public class ex15 {
     public static void main(String[] args) {
-        /*
-        Faça um Programa que peça os 3 lados de um triângulo. O programa
-        deverá informar se os valores podem ser um triângulo. Indique, caso
-        os lados formem um triângulo, se o mesmo é: equilátero, isósceles ou
-        escaleno.
-
-        o Dicas:
-        o Três lados formam um triângulo quando a soma de quaisquer
-        dois lados for maior que o terceiro;
-        o Triângulo Equilátero: três lados iguais;
-        o Triângulo Isósceles: quaisquer dois lados iguais;
-        o Triângulo Escaleno: três lados diferentes;
-         */
         int a;
         int b;
         int c;
 
-        JOptionPane.showInputDialog("Entre com o primeiro lado do triangulo: ");
+        a = Integer.parseInt(JOptionPane.showInputDialog("Entre com o primeiro lado do triangulo: "));
+        b = Integer.parseInt(JOptionPane.showInputDialog("Entre com o segundo lado do triangulo: "));
+        c = Integer.parseInt(JOptionPane.showInputDialog("Entre com o terceiro lado do triangulo: "));
+
+        int soma = a + b;
+
+        if (soma > c){
+            System.out.println("É um triângulo:");
+            System.out.println("-----------------");
+
+        }else {
+            System.exit(0);
+        }
+
+        if ((a == b && a == c) && (b == a && b == c) && (c == a && c == b) ){
+            System.out.println("É EQUILÁTERO");
+        } else if ((a == b || c == b || c == a)) {
+            System.out.println("É ISOSCELES");
+        } else if (a != b && b != c) {
+            System.out.println("É ESCALENO");
+        }
 
     }
 }
