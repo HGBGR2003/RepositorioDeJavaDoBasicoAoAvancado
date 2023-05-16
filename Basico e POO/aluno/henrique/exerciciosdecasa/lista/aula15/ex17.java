@@ -1,16 +1,15 @@
 package aluno.henrique.exerciciosdecasa.lista.aula15;
 
+import javax.swing.*;
 import java.util.Scanner;
 
 public class ex17 {
     // Feito com o Chat
     public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
-
-        System.out.print("Digite o ano: ");
-        int ano = scanner.nextInt();
-
+        int ano;
         boolean ehBissexto = false;
+
+        ano = Integer.parseInt(JOptionPane.showInputDialog("Entre com o ano para vermos se é bissexto ou não:"));
 
         if (ano % 4 == 0) {
             if (ano % 100 == 0) {
@@ -28,6 +27,5 @@ public class ex17 {
             System.out.println(ano + " não é um ano bissexto.");
         }
 
-        scanner.close();
     }
 }
