@@ -1,26 +1,24 @@
 package aluno.henrique.exerciciosdecasa.lista.aula15;
 
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
+import java.util.Date;
 import java.util.Scanner;
 
 public class ex18 {
     public static void main(String[] args) {
-        Scanner impressora = new Scanner(System.in);
-        System.out.println("Entre com um número para o dia no formato dd");
-        int dia = impressora.nextInt();
+        Scanner imprimir = new Scanner(System.in);
+        System.out.println("Entre com uma data no formato dd/mm/aaaa");
+        String data = imprimir.nextLine();
 
-        System.out.println("Entre com um número para o mês no formato mm");
-        int mes = impressora.nextInt();
+        SimpleDateFormat formatoDeData = new SimpleDateFormat("dd/MM/yyyy");
+        formatoDeData.setLenient(false);
 
-        System.out.println("Entre com um número para o ano no formato aaaa");
-        int ano = impressora.nextInt();
-
-        if (dia > 0  && dia <= 31){
-            System.out.println("Dia consistente");
-        } else if (mes > 0 && mes < 12) {
-            System.out.println("Mês consistente");
-        } else if (ano > 0) {
-            System.out.println();
+        try {
+            Date dataCorreta = formatoDeData.parse(data);
+            System.out.println("A data é valida");
+        }catch (ParseException e){
+            System.out.println("A data é inválida");
         }
-
     }
 }

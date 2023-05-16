@@ -1,6 +1,7 @@
 package aluno.henrique.exerciciosdecasa.lista.aula15;
 
 import javax.swing.*;
+import java.util.Scanner;
 
 public class ex17 {
     // Feito com o Chat
