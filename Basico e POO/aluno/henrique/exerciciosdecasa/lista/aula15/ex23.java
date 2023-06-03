@@ -4,15 +4,28 @@ import javax.swing.*;
 
 public class ex23 {
     public static void main(String[] args) {
-        int numero;
-        numero = Integer.parseInt(JOptionPane.showInputDialog("Entre com um número"));
-        JOptionPane.showMessageDialog(null,"O número irá ser verificado para Inteiro ou Decimal");
-        if (numero != '.'){
-            System.out.println("INTEIRO");
-        }else{
-            String numeroTexto = String.valueOf(numero);
-            numeroTexto.contains(".");
-            System.out.println("DECIMAL");
+        double numero1;
+        double numero2;
+
+        numero1 = Double.parseDouble(JOptionPane.showInputDialog("Entre com o primeiro número: (Com ponto se for decimal)"));
+        numero2 = Double.parseDouble(JOptionPane.showInputDialog("Entre com o segundo número: (Com ponto se for decimal)"));
+
+        System.out.println(numero1 + " é decimal ? " + "\n" + verificarDecimal(numero1));
+        System.out.println("---------------");
+        System.out.println(numero2 + " é decimal ? " + "\n" + verificarDecimal(numero2));
+    }
+
+    public static boolean verificarDecimal(double numero) {
+        if (numero % 1 != 0) {
+            return true;
+        } else {
+            return false;
         }
     }
 }
+
+
+
+
+
+
