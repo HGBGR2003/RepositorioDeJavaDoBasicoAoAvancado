@@ -28,7 +28,8 @@ public class ex24 {
             decimalOuNao = "inteiro";
         }
 
-        System.out.println();
+        System.out.println("O número digitado é " + imparOuPar + " em seguida " + positivoNegativo +
+                " e por último ele é " + decimalOuNao);
 
     }
 }
