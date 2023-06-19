@@ -37,5 +37,15 @@ public class ex25 {
             contador++;
         }
 
+        if (contador == 2){
+            System.out.println("Suspeita");
+        } else if (contador >= 3 && contador <= 4) {
+            System.out.println("Cúmplice");
+        } else if (contador == 5) {
+            System.out.println("Assassino");
+        }else{
+            System.out.println("Inocente");
+        }
+
     }
 }
