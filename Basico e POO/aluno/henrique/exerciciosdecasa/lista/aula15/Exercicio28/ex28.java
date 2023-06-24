@@ -12,6 +12,8 @@ public class ex28 {
         double quantidadeKilosCarne = Double.parseDouble(JOptionPane.showInputDialog("Entre com a quantidade de quilos de carne " + tipo));
         usaCartao = JOptionPane.showInputDialog("Sua forma de pagamento ? (Usando o cartao Tabajara 5%)");
 
+        calculo.precoCarneMenorQue5(tipo);
+        calculo.precoCarneMaiorQue5(tipo);
 
         calculo.calculoPreco(quantidadeKilosCarne,tipo,usaCartao);
 
