@@ -14,24 +14,42 @@ public class ex27 {
         System.out.println("Entre com a quantidade de quilos de Maçãs");
         quantidadeMacasKg = qtde.nextDouble();
 
-        double desconto;
+        System.out.println("----------------------------------------------");
+
+        double desconto = 0;
         if (quantidadeMorangosKg <= 5){
             double totalPreco;
             totalPreco = quantidadeMorangosKg * 2.50;
-            System.out.println("Total do preço do kilo dos morangos até 5 Kg: " + totalPreco);
+            double separacao = Math.floor(totalPreco * 100)/100;
+            System.out.println("Total do preço do kilo dos morangos até 5 Kg: R$ " + separacao);
         }
 
-        if (quantidadeMorangosKg > 5){
-            double totalPreco = quantidadeMorangosKg * 2.20;
-            System.out.println("Total do preço do kilo dos morangos de Acima de 5 Kg: " + totalPreco);
+        if (quantidadeMorangosKg > 5 && quantidadeMacasKg <= 8){
+            double totalPreco2 = quantidadeMorangosKg * 2.20;
+            double separacao = Math.floor(totalPreco2 * 100)/100;
+            if (totalPreco2 > 25){
+                desconto = separacao - 0.1;
+            }else{
+                desconto = separacao;
+            }
+            System.out.println("Total do preço do kilo dos morangos de Acima de 5 Kg: R$ " + separacao);
         }
 
         if (quantidadeMacasKg <= 5){
             double totalPrecoMacas = quantidadeMacasKg * 1.80;
-            System.out.println("Total do preço do kilo das maçãs até de 5 Kg: " + totalPrecoMacas);
-        } else if (quantidadeMacasKg > 5) {
-            double totalPrecosMacas = quantidadeMacasKg * 1.50;
-            System.out.println("Total do preço do kilo das maçãs de Acima de 5 Kg: " + totalPreco);
+            double trucamento = Math.floor(totalPrecoMacas * 100)/100;
+            System.out.println("Total do preço do kilo das maçãs até de 5 Kg: R$ " + trucamento);
+        } else if (quantidadeMacasKg > 5 && quantidadeMacasKg <= 8) {
+            double totalPrecosMacas2 = quantidadeMacasKg * 1.50;
+            double truncamento = Math.floor(totalPrecosMacas2 * 100)/100;
+            if (totalPrecosMacas2 > 25){
+                desconto = truncamento - 0.1;
+            }else{
+                desconto = truncamento;
+            }
+            System.out.println("Total do preço do kilo das maçãs de Acima de 5 Kg: R$ " + truncamento);
         }
+
+
     }
 }
