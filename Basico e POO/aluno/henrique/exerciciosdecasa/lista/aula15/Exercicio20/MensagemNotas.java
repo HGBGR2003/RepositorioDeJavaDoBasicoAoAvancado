@@ -1,9 +1,9 @@
-package aluno.henrique.exerciciosdecasa.lista.aula15;
+package aluno.henrique.exerciciosdecasa.lista.aula15.Exercicio20;
 
 import java.math.RoundingMode;
 import java.text.DecimalFormat;
 
-public class Continuacao20 {
+public class MensagemNotas {
     public static void truncar(double valor){
         DecimalFormat df = new DecimalFormat("#,#0.0");
         df.setRoundingMode(RoundingMode.DOWN);

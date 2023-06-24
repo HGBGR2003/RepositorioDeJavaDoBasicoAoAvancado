@@ -1,10 +1,10 @@
-package aluno.henrique.exerciciosdecasa.lista.aula15;
+package aluno.henrique.exerciciosdecasa.lista.aula15.Exercicio20;
 
 import javax.swing.*;
 
 public class ex20 {
     public static void main(String[] args) {
-        Continuacao20 c20 = new Continuacao20();
+        MensagemNotas c20 = new MensagemNotas();
         double nota1;
         double nota2;
         double nota3;
