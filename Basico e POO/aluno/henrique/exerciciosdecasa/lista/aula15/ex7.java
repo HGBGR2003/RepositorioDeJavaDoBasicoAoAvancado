@@ -28,13 +28,13 @@ public class ex7 {
         }
 
         //Menor
-        if (numero1 < numero2 && numero1 < numero3){
+        if (numero1 <= numero2 && numero1 <= numero3){
             System.out.println("O número menor é este " + numero1);
             System.out.println("---------------------------------");
-        } else if (numero2 < numero1 && numero2 < numero3) {
+        } else if (numero2 <= numero1 && numero2 <= numero3) {
             System.out.println("O número menor é este " + numero2);
             System.out.println("---------------------------------");
-        }else if (numero3 < numero1 && numero3 < numero2){
+        }else if (numero3 <= numero1 && numero3 <= numero2){
             System.out.println("O número menor é este " + numero3);
             System.out.println("---------------------------------");
         }
