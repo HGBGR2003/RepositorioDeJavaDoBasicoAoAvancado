@@ -1,4 +1,4 @@
-package aluno.henrique.exerciciosdecasa.lista.aula15.Exercicio28;
+package aluno.henrique.exerciciosdecasa.ExercicioBonus;
 
 public class CalculoDosPrecosDasCarnes {
 

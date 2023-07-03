@@ -19,12 +19,12 @@ public class ex8 {
         produto3 = scan.nextDouble();
         System.out.println("------------------------------");
 
-        if (produto1 < produto2 && produto1 < produto3){
-            System.out.println("Este é o produto 1, o mais barato custando R$ " + produto1);
-        } else if (produto2 < produto1 && produto2 < produto3) {
-            System.out.println("Este é o produto 2, o mais barato custando R$ " + produto2);
-        } else if (produto3 < produto1 && produto3 < produto2) {
-            System.out.println("Este é o produto 3, o mais barato custando R$ " + produto3);
+        if (produto1 <= produto2 && produto1 <= produto3){
+            System.out.println("Compre o produto 1");
+        } else if (produto2 <= produto1 && produto2 <= produto3) {
+            System.out.println("Compre o produto 2");
+        } else if (produto3 <= produto1 && produto3 <= produto2) {
+            System.out.println("Compre o produto 3");
         }
 
 

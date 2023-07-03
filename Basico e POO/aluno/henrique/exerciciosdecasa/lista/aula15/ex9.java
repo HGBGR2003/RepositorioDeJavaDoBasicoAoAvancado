@@ -1,21 +1,35 @@
 package aluno.henrique.exerciciosdecasa.lista.aula15;
 
-import javax.swing.*;
-import java.util.Random;
 import java.util.Scanner;
 
 public class ex9 {
     public static void main(String[] args) {
-        double[] numero1 = new double[4];
-        Random random = new Random();
-        double numeroAleatorio = random.nextInt(11);
+        Scanner impressora = new Scanner(System.in);
 
-        for (int i = 0; i < numero1.length; i++){
-            numeroAleatorio--;
-            numero1[i] = numeroAleatorio;
-            System.out.println(numero1[i]);
-        }
+        System.out.println("Entre com o primeiro número:");
+        int num1 = impressora.nextInt();
 
+
+        System.out.println("Entre com o segundo número:");
+        int num2 = impressora.nextInt();
+
+
+        System.out.println("Entre com o terceiro número:");
+        int num3 = impressora.nextInt();
+
+        if (num1 <= num2 && num1 <= num3 && num2 <= num3){
+            System.out.println(num3 + " - " + num2 + " - " + num1);
+        }else  if (num1 <= num2 && num1 <= num3 && num3 <= num2){
+            System.out.println(num2 + " - " + num3 + " - " + num1);
+        }else if (num2 <= num1 && num2 <= num3 && num1 <= num2){
+            System.out.println(num3 + " - " + num1 + " - " + num2);
+        } else if (num2 <= num1 && num2 <= num3 && num3 <= num1){
+            System.out.println(num1 + " - " + num3 + " - " + num2);
+        }else if (num3 <= num1 && num3 <= num2 && num1 <= num2){
+            System.out.println(num2 + " - " + num1 + " - " + num3);
+        }else if (num3 <= num1 && num3 <= num2 && num2 <= num1){
+            System.out.println(num1 + " - " + num2 + " - " + num3);
+    }
 
     }
 }
