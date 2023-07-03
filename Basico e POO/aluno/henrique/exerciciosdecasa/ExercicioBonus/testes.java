@@ -2,7 +2,7 @@ package aluno.henrique.exerciciosdecasa.ExercicioBonus;
 
 import javax.swing.*;
 
-public class ex28 {
+public class testes {
     public static void main(String[] args) {
         String tipo;
         String usaCartao;

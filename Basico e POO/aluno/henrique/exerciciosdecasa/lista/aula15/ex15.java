@@ -4,31 +4,32 @@ import javax.swing.*;
 
 public class ex15 {
     public static void main(String[] args) {
-        int a;
-        int b;
-        int c;
+        int lado1;
+        int lado2;
+        int lado3;
 
-        a = Integer.parseInt(JOptionPane.showInputDialog("Entre com o primeiro lado do triangulo: "));
-        b = Integer.parseInt(JOptionPane.showInputDialog("Entre com o segundo lado do triangulo: "));
-        c = Integer.parseInt(JOptionPane.showInputDialog("Entre com o terceiro lado do triangulo: "));
+        lado1 = Integer.parseInt(JOptionPane.showInputDialog("Entre com o primeiro lado do triangulo: "));
+        lado2 = Integer.parseInt(JOptionPane.showInputDialog("Entre com o segundo lado do triangulo: "));
+        lado3 = Integer.parseInt(JOptionPane.showInputDialog("Entre com o terceiro lado do triangulo: "));
 
-        int soma = a + b;
+        if(((lado1 + lado2) > lado3) && ((lado1 + lado3) > lado2)
+                && ((lado2 + lado3) > lado1)){
 
-        if (soma > c){
-            System.out.println("É um triângulo:");
-            System.out.println("-----------------");
-
-        }else {
-            System.exit(0);
+            if (lado1 == lado2 && lado1 == lado3 && lado2 == lado3){
+                System.out.println("Equilatero");
+            } else if (lado1 != lado2 && lado1 != lado3 && lado3 != lado2) {
+                System.out.println("Triângulo Escaleno");
+            } else if (lado1 == lado2 || lado1 == lado3 || lado2 == lado3) {
+                System.out.println("Triângulo Isóceles");
+            }
+            
+        }else{
+            System.out.println("Não forma um triangulo");
         }
 
-        if ((a == b && a == c) && (b == a && b == c) && (c == a && c == b) ){
-            System.out.println("É EQUILÁTERO");
-        } else if ((a == b || c == b || c == a)) {
-            System.out.println("É ISOSCELES");
-        } else if (a != b && b != c) {
-            System.out.println("É ESCALENO");
-        }
+
+
+
 
     }
 }

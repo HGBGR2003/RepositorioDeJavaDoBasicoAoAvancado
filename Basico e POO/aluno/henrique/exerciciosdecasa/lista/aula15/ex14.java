@@ -25,26 +25,40 @@ public class ex14 {
         System.out.println("A media é " + result);
         System.out.println("--------------------");
 
+        String aproveitamento = null;
+
         if (mediaDasNotas > 9 && mediaDasNotas <= 10){
-            System.out.println("A");
+            aproveitamento = "A";
             System.out.println("---------");
-            System.out.println("APROVADO");
         } else if (mediaDasNotas > 7.5 && mediaDasNotas <= 9 ) {
-            System.out.println("B");
+            aproveitamento = "B";
             System.out.println("---------");
-            System.out.println("APROVADO");
         } else if (mediaDasNotas > 6 && mediaDasNotas <= 7.5) {
-            System.out.println("C");
+            aproveitamento = "C";
             System.out.println("---------");
-            System.out.println("APROVADO");
         } else if (mediaDasNotas > 4 && mediaDasNotas <= 6.0) {
-            System.out.println("D");
+            aproveitamento = "D";
             System.out.println("---------");
-            System.out.println("REPROVADO");
-        } else if (mediaDasNotas <=  4 || mediaDasNotas == 0) {
-            System.out.println("E");
+        } else if (mediaDasNotas >=  4 || mediaDasNotas < 0) {
+            aproveitamento = "E";
             System.out.println("---------");
-            System.out.println("REPROVADO");
+        }
+
+        System.out.println("Nota 1: " + nota1);
+        System.out.println("Nota 2: " + nota2);
+        System.out.println("Média: " + mediaDasNotas);
+        System.out.println("Conceito: " + aproveitamento);
+
+        switch (aproveitamento){
+            case "A":
+            case "B":
+            case "C":
+                System.out.println("APROVADO");
+                break;
+            case "D":
+            case "E":
+                System.out.println("REPROVADO");
+                break;
         }
 
     }
