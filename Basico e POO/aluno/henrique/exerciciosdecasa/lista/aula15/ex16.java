@@ -17,34 +17,36 @@ public class ex16 {
         b = Double.parseDouble(JOptionPane.showInputDialog("Entre com o valor de b:"));
         c = Double.parseDouble(JOptionPane.showInputDialog("Entre com o valor de c:"));
 
-        delta = (b * b) - 4 * a * c;
-        double raiz = Math.sqrt(delta);
-
-        xResposta1 = ( - b - raiz) / (2 * a);
-
-        xResposta2 = (- b + raiz) / (2 * a);
-
-        truncado1 = Math.floor(xResposta1);
-        truncado2 = Math.floor(xResposta2);
-
         if (a == 0){
-            System.exit(0);
-        }
+            System.out.println("Não é equação de segundo grau");
+        }else{
+            delta = (b * b) - 4 * a * c;
 
-        if (delta < 0){
-            System.out.println("Não possui raizes reais");
-            System.exit(0);
-        }
+            if (delta < 0){
+                System.out.println("Delta Negativo");
+            }else{
 
-        if (delta == 0){
-            System.out.println("Possui apenas uma raiz real:");
-            System.out.println("x1 = " + truncado1);
-        }
+                System.out.println("delta: " + delta);
 
-        if (delta > 0){
-            System.out.println("x1 = " + truncado1 + ", x2 = " + truncado2);
-        }
+                double raiz = Math.sqrt(delta);
 
+                xResposta1 = ( - b - raiz) / (2 * a);
+
+                xResposta2 = (- b + raiz) / (2 * a);
+
+                truncado1 = Math.floor(xResposta1);
+                truncado2 = Math.floor(xResposta2);
+
+                if (delta == 0){
+                    System.out.println("Possui apenas uma raiz real:");
+                    System.out.println("x1 = " + truncado1);
+                }
+
+                if (delta > 0){
+                    System.out.println("x1 = " + truncado1 + ", x2 = " + truncado2);
+                }
+            }
+        }
 
     }
 }

@@ -12,8 +12,8 @@ public class ex15 {
         lado2 = Integer.parseInt(JOptionPane.showInputDialog("Entre com o segundo lado do triangulo: "));
         lado3 = Integer.parseInt(JOptionPane.showInputDialog("Entre com o terceiro lado do triangulo: "));
 
-        if(((lado1 + lado2) > lado3) && ((lado1 + lado3) > lado2)
-                && ((lado2 + lado3) > lado1)){
+        if(((lado1 + lado2) > lado3) || ((lado1 + lado3) > lado2)
+                || ((lado2 + lado3) > lado1)){
 
             if (lado1 == lado2 && lado1 == lado3 && lado2 == lado3){
                 System.out.println("Equilatero");
@@ -22,7 +22,7 @@ public class ex15 {
             } else if (lado1 == lado2 || lado1 == lado3 || lado2 == lado3) {
                 System.out.println("Triângulo Isóceles");
             }
-            
+
         }else{
             System.out.println("Não forma um triangulo");
         }
