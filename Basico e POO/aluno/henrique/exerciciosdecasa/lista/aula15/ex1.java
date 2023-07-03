@@ -11,9 +11,9 @@ public class ex1 {
         numero2 = Integer.parseInt(JOptionPane.showInputDialog("Entre com o segundo número:"));
 
         if (numero1 > numero2){
-            System.out.println("O número maior foi este que é " + numero1);
-        } else if (numero2 > numero1) {
-            System.out.println("O número maior foi este que é " + numero2);
+            System.out.println("O num1 é maior: " + numero1);
+        } else{
+            System.out.println("O num2 é maior: " + numero2);
         }
 
     }

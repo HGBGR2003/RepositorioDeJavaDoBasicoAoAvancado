@@ -12,10 +12,10 @@ public class ex2 {
 
         System.out.println("------------------------");
 
-        if (valor1 > 0){
-            System.out.println("É POSITIVO");
-        }else if (valor1 < 0){
-            System.out.println("É NEGATIVO");
+        if (valor1 >= 0){
+            System.out.println("O número informado é POSITIVO");
+        }else{
+            System.out.println("O número informado é NEGATIVO");
         }
 
     }
