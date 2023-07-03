@@ -1,8 +1,8 @@
-package aluno.henrique.exerciciosdecasa.ExercicioBonus;
+package aluno.henrique.exerciciosdecasa.lista.aula15.Exercicio23;
 
 import javax.swing.*;
 
-public class testes {
+public class ex23 {
     public static void main(String[] args) {
         String tipo;
         String usaCartao;
