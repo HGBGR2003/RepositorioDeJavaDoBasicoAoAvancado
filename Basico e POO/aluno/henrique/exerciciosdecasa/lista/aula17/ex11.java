@@ -20,11 +20,6 @@ public class ex11 {
                 System.out.println(soma);
             }
 
-
-
-
-
-
         }
     }
 }
