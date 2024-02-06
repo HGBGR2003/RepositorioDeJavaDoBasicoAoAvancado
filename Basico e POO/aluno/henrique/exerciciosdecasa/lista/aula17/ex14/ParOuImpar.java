@@ -8,10 +8,8 @@ public class ParOuImpar {
 
         if (numero % 2 == 0){
             contadorPar++;
-            System.out.println("A quantidade de números pares é " + contadorPar);
         }else{
             contadorImpar++;
-            System.out.println("A quantidade de números impares é " + contadorImpar);
         }
 
     }

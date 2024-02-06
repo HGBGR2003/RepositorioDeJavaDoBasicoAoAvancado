@@ -4,7 +4,7 @@ import javax.swing.*;
 
 public class ex14 {
     public static void main(String[] args) {
-        int numeroPrincipal = 0;
+        int numeroPrincipal;
         ParOuImpar pi = new ParOuImpar();
 
         int quantidadePares = 0;
@@ -21,9 +21,9 @@ public class ex14 {
             }else{
                 quantidadeImpares++;
             }
-
         }
 
-
+        System.out.println("A quantidade total de números pares é: " + quantidadePares);
+        System.out.println("A quantidade total de números ímpares é: " + quantidadeImpares);
     }
 }
