@@ -12,11 +12,19 @@ public class UsandoQuebrar {
         System.out.println("Entre com um limite");
         int max = impressora.nextInt();
 
-        for (int i = num; i <= max; i++){
+       /* for (int i = num; i <= max; i++){
             if (i % 7 == 0){
                 System.out.println("O valor de i é: " + i);
                 break;
             }
+        }*/
+        for (int i = num; i <= max; i++){
+            if (i % 7 == 0){
+                continue;
+            }
+            System.out.println("O valor de i é: " + i);
         }
+
+
     }
 }
