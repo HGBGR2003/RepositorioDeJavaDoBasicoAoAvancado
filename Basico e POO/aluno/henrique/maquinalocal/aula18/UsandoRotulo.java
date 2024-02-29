@@ -1,6 +1,6 @@
 package aluno.henrique.maquinalocal.aula18;
 
-public class UsandoRotulo extends UsandoQuebrar {
+public class UsandoRotulo {
     public static void main(String[] args) {
 
         //Não é muito utilizado.
