@@ -2,6 +2,13 @@ package aluno.henrique.maquinalocal.aula19;
 
 public class AulaVetores {
     public static void main(String[] args) {
-        
+        double[] temperaturas = new double[365];
+        /*Forma comum, mas não utilizado por se tratar de codigo limitado!*/
+        temperaturas[0] = 31.3;
+        temperaturas[1] = 32;
+        temperaturas[2] = 33.7;
+        temperaturas[3] = 34;
+        temperaturas[4] = 33.1;
+
     }
 }
