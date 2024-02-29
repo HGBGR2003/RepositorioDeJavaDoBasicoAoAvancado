@@ -10,5 +10,11 @@ public class AulaVetores {
         temperaturas[3] = 34;
         temperaturas[4] = 33.1;
 
+        System.out.println(temperaturas[0]);
+        System.out.println(temperaturas[1]);
+        System.out.println(temperaturas[2]);
+        System.out.println(temperaturas[3]);
+        System.out.println(temperaturas[4]);
+
     }
 }
