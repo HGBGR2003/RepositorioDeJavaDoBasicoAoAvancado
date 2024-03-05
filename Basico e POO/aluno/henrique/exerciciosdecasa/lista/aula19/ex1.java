@@ -4,12 +4,13 @@ import javax.swing.*;
 
 public class ex1 {
     public static void main(String[] args) {
-        int notaUsuario = Integer.parseInt(JOptionPane.showInputDialog("Informe um nota entre 0 e 10:"));
+        double notaUsuario = Double.parseDouble(JOptionPane.showInputDialog("Informe um nota entre 0 e 10:"));
 
         while (notaUsuario < 0 || notaUsuario > 10){
-            notaUsuario = Integer.parseInt(JOptionPane.showInputDialog("Infomre outra nota no intervalo de 0 e 10:"));
-            if (notaUsuario == 0){ //Mandando.
-                System.out.println("Nota Válida:" + notaUsuario);
+            JOptionPane.showMessageDialog(null,"Informação Incorreta, faça de novo!");
+            notaUsuario = Double.parseDouble(JOptionPane.showInputDialog("Infomre outra nota no intervalo de 0 e 10:"));
+            if (notaUsuario >= 0 && notaUsuario <= 10){
+                System.out.println("Nota Válida : " + notaUsuario);
             }
         }
     }
