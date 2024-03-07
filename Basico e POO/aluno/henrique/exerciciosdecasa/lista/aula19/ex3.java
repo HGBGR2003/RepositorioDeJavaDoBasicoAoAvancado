@@ -32,10 +32,16 @@ public class ex3 {
            sexoHumano = JOptionPane.showInputDialog("Informe um sexo M ou F:");
         }
 
+       if (!estadoCivil.equals("s") || !estadoCivil.equals("c") || !estadoCivil.equals("v") || !estadoCivil.equals("d")){
+           System.out.println("Continuo mais tarde.");
+       }
+
         System.out.println("O seu nome: " + nome);
         System.out.println("A sua idade: " + idade);
         System.out.println("O seu salario é de: " + salario);
         System.out.println("O seu sexo : " + sexoHumano);
+
+
 
     }
 }
