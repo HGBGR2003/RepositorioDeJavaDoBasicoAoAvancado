@@ -33,13 +33,14 @@ public class ex3 {
         }
 
        if (!estadoCivil.equals("s") || !estadoCivil.equals("c") || !estadoCivil.equals("v") || !estadoCivil.equals("d")){
-           System.out.println("Continuo mais tarde.");
+           estadoCivil = JOptionPane.showInputDialog("Entre com seu estado civil de novo: (s,c,v,d)");
        }
 
         System.out.println("O seu nome: " + nome);
         System.out.println("A sua idade: " + idade);
         System.out.println("O seu salario é de: " + salario);
         System.out.println("O seu sexo : " + sexoHumano);
+        System.out.println("O seu estado civil é: " + estadoCivil);
 
 
 
