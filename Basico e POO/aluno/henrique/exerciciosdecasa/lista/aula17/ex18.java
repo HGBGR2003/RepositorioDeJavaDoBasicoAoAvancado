@@ -1,8 +1,8 @@
-package aluno.henrique.exerciciosdecasa.lista.aula19;
+package aluno.henrique.exerciciosdecasa.lista.aula17;
 
 import javax.swing.*;
 
-public class ex3 {
+public class ex18 {
     public static void main(String[] args) {
         String nome = null;
         int idade = 0;

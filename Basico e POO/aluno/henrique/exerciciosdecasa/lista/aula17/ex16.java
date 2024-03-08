@@ -1,8 +1,8 @@
-package aluno.henrique.exerciciosdecasa.lista.aula19;
+package aluno.henrique.exerciciosdecasa.lista.aula17;
 
 import javax.swing.*;
 
-public class ex1 {
+public class ex16 {
     public static void main(String[] args) {
         double notaUsuario = Double.parseDouble(JOptionPane.showInputDialog("Informe um nota entre 0 e 10:"));
 

@@ -1,8 +1,8 @@
-package aluno.henrique.exerciciosdecasa.lista.aula19;
+package aluno.henrique.exerciciosdecasa.lista.aula17;
 
 import javax.swing.*;
 
-public class ex2 {
+public class ex17 {
     public static void main(String[] args) {
         String nomeUsuario;
         String senha;
