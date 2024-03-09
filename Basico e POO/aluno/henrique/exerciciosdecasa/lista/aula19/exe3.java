@@ -2,7 +2,7 @@ package aluno.henrique.exerciciosdecasa.lista.aula19;
 
 import javax.swing.*;
 
-public class ex3 {
+public class exe3 {
     public static void main(String[] args) {
         double [] vetor1 = new double[15];
         double [] vetor2 = new double[15];
