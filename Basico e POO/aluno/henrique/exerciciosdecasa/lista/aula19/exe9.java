@@ -2,7 +2,7 @@ package aluno.henrique.exerciciosdecasa.lista.aula19;
 
 import javax.swing.*;
 
-public class exe8 {
+public class exe9 {
     public static void main(String[] args) {
         int[] vetorA = new int[10];
         int[] vetorB = new int[10];
@@ -17,7 +17,7 @@ public class exe8 {
             vetorA[i] = valorUsuA;
             vetorB[i] = valorUsuB;
 
-            vetorC[i] = vetorA[i] * vetorB[i];
+            vetorC[i] = vetorA[i] / vetorB[i];
 
             System.out.println("O resultado da multiplicação: " + vetorC[i]);
 
